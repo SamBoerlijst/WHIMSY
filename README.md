@@ -5,13 +5,13 @@ An Arduino-based data-logger for meteorological data including: air pressure/alt
 - Arduino nano
 - SEN 08942 wind adenometer sensor[^1]
 - SEN 08942 wind specometer sensor[^1]
-- BME 680 weather sensor[^2]
+- BME 280 or 680 weather sensor[^2]
 - SD card reader
 - SD card (up to 2GB FAT16)
 - 10k resistor
 - microUSB-USB connector
 [^1]: Argent datasystems; Weather Sensor Assembly p/n 80422; https://www.argentdata.com/catalog/product_info.php?products_id=145
-[^2]: Bosch; BME 680 gass sensor; https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/
+[^2]: Adafruit board using Bosch BME 260 or 680 gass sensor; https://www.bosch-sensortec.com/products/environmental-sensors/humidity-sensors-bme280/  or https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/; 
 
 ## Schematic
 ### pinout
