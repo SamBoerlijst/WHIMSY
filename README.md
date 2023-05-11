@@ -3,12 +3,14 @@ An Arduino-based data-logger for meteorological data including: air pressure/alt
 
 ## Parts
 - Arduino nano
-- SEN 08942 wind adenometer sensor
-- SEN 08942 wind specometer sensor
-- BME 680 weather sensor
+- SEN 08942 wind adenometer sensor[^1]
+- SEN 08942 wind specometer sensor[^1]
+- BME 680 weather sensor[^2]
 - SD card reader
 - SD card (up to 2GB FAT16)
+- 10k resistor
 - microUSB-USB connector
+[^1]: Argent datasystems; Weather Sensor Assembly p/n 80422; https://www.argentdata.com/catalog/product_info.php?products_id=145
 
 ## Schematic
 ### pinout
@@ -26,8 +28,8 @@ _Check your controller's spec which pins have ADC or interrupt capabilities!_
 * Gas (kOhms)
 * Approximate altitude(m)
 * Wind speed (m/s)
-* Wind direction (tertiary intercardinal directions[^1])
-[^1]: "N", "NNE", "NE"...
+* Wind direction (tertiary intercardinal directions[^2])
+[^2]: "N", "NNE", "NE"...
 
 ## Specifications:
 ### Communication protocol: SPI
