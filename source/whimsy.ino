@@ -56,7 +56,8 @@ unsigned long previousMillis=0;
 const int chipSelect = 10;
 const unsigned int pinDirection, pinSpeed, directionOffset;
 const unsigned int directionVolt[16]   = {320, 410, 450, 620, 900, 1190, 1400, 1980, 2250, 2930, 3080, 3430, 3840, 4040, 4620, 4780};
-const unsigned int directionDegree[16] = {"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"};
+const unsigned int directionCardinal[16] = {"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"};
+const unsigned int directionDegree[16] = {"0", "22.5", "45", "67.5", "90", "112.5", "135", "157.5", "180", "202.5", "225", "247.5", "270", "292.5", "315", "337.5"}
 
 void WEATHER_speedInterruptHandler () {
     currentSpeedReading = digitalRead(60);
@@ -125,7 +126,7 @@ float getWindDir () {
         if (mvolt <= directionVolt[i]) break;
     }
     i--;  //the correct reference is actually lower than the reference value found.
-    Direction =  ((directionDegree[i] + 0) % 360);
+    Direction =  ((directionCardinal[i] + 0) % 360);
 }
 
 void getWindSpeed () {
