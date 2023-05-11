@@ -11,6 +11,7 @@ An Arduino-based data-logger for meteorological data including: air pressure/alt
 - 10k resistor
 - microUSB-USB connector
 [^1]: Argent datasystems; Weather Sensor Assembly p/n 80422; https://www.argentdata.com/catalog/product_info.php?products_id=145
+[^2]: Bosch; BME 680 gass sensor; https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme680/
 
 ## Schematic
 ### pinout
@@ -28,8 +29,8 @@ _Check your controller's spec which pins have ADC or interrupt capabilities!_
 * Gas (kOhms)
 * Approximate altitude(m)
 * Wind speed (m/s)
-* Wind direction (tertiary intercardinal directions[^2])
-[^2]: "N", "NNE", "NE"...
+* Wind direction (tertiary intercardinal directions[^3])
+[^3]: "N", "NNE", "NE"...
 
 ## Specifications:
 ### Communication protocol: SPI
