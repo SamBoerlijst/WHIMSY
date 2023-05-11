@@ -33,6 +33,6 @@ _Check your controller's spec which pins have ADC or interrupt capabilities!_
 [^3]: "N", "NNE", "NE"...
 
 ## Specifications:
-### Communication protocol: SPI
-### Libraries: math, Wire, SD, SPI, LowPower, Adafruit_Sensor and Adafruit_BME680
-### Battery-life: 1 week on a 20.000mAh powerbank; 0.019A/h
+* Communication protocol: SPI
+* Libraries: math, Wire, SD, SPI, LowPower, Adafruit_Sensor and Adafruit_BME680
+* Battery-life: 1 week on a 20.000mAh powerbank; 0.019A/h
